@@ -1,0 +1,53 @@
+<div id = "blog">
+  <div class="container">
+    <!-- write logic to handle form submission by calling onSubmit() method-->
+      <form [formGroup]="form" >
+      <div class="row">
+        <div class="col-25">
+          <label>Blog Title</label>
+        </div>
+        <div class="col-75">
+          <input formControlName="title" type="text"  placeholder="Enter Blog Title">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label >Author Name</label>
+        </div>
+        <div class="col-75">
+          <input formControlName="authorName" type="text"  placeholder="Enter Author Name">
+        </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-25">
+            <label >Author Email</label>
+          </div>
+          <div class="col-75">
+            <input formControlName="email" type="email" placeholder="Enter Author Email">
+          </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label>Content of Blog</label>
+        </div>
+        <div class="col-75">
+          <textarea formControlName="content" placeholder="Enter Content of Blog" style="height:140px"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <input class="btn" type="submit" value="Add Blog">
+      </div>
+    </form>    
+
+         <!-- write logic to display message -->
+      <div class="alert" >
+      </div>
+  </div>
+</div>
+  
+  
+  
